@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) NSDate * hiredDate;
 
 -(void) getYearOfEmployment;
+-(void) bodyMassIndex; //override
 
 
 @end

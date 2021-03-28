@@ -13,4 +13,9 @@
     NSLog(@"Year of employment of Employee%d is: %@", [self employeeID], [self hiredDate]);
 }
 
+//override
+-(void) bodyMassIndex{
+    NSLog(@"bmi is %f.",  19.0);
+}
+
 @end

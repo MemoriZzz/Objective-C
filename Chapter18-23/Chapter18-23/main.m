@@ -43,6 +43,9 @@ int main(int argc, const char * argv[]) {
         [e bodyMassIndex]; //父类方法
         [e getYearOfEmployment]; //自己方法
         
+        //20.1 override
+        [e bodyMassIndex]; 
+        
         
         
     }
