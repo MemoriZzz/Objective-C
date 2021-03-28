@@ -10,6 +10,8 @@
 		846A656D2610794000A1C625 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 846A656C2610794000A1C625 /* main.m */; };
 		846A65752610797D00A1C625 /* Person1.m in Sources */ = {isa = PBXBuildFile; fileRef = 846A65742610797D00A1C625 /* Person1.m */; };
 		846A657D261081A400A1C625 /* Person2.m in Sources */ = {isa = PBXBuildFile; fileRef = 846A657C261081A400A1C625 /* Person2.m */; };
+		846A65802610897400A1C625 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 846A657F2610897400A1C625 /* Person.m */; };
+		846A658626108A0600A1C625 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 846A658526108A0600A1C625 /* Employee.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,10 @@
 		846A65772610798700A1C625 /* Person1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person1.h; sourceTree = "<group>"; };
 		846A657B2610819700A1C625 /* Person2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person2.h; sourceTree = "<group>"; };
 		846A657C261081A400A1C625 /* Person2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person2.m; sourceTree = "<group>"; };
+		846A657F2610897400A1C625 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		846A65822610897D00A1C625 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		846A658426108A0600A1C625 /* Employee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		846A658526108A0600A1C625 /* Employee.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +70,14 @@
 			isa = PBXGroup;
 			children = (
 				846A656C2610794000A1C625 /* main.m */,
+				846A65822610897D00A1C625 /* Person.h */,
+				846A657F2610897400A1C625 /* Person.m */,
 				846A65742610797D00A1C625 /* Person1.m */,
 				846A65772610798700A1C625 /* Person1.h */,
 				846A657B2610819700A1C625 /* Person2.h */,
 				846A657C261081A400A1C625 /* Person2.m */,
+				846A658426108A0600A1C625 /* Employee.h */,
+				846A658526108A0600A1C625 /* Employee.m */,
 			);
 			path = "Chapter18-23";
 			sourceTree = "<group>";
@@ -128,8 +138,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				846A658626108A0600A1C625 /* Employee.m in Sources */,
 				846A657D261081A400A1C625 /* Person2.m in Sources */,
 				846A65752610797D00A1C625 /* Person1.m in Sources */,
+				846A65802610897400A1C625 /* Person.m in Sources */,
 				846A656D2610794000A1C625 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
