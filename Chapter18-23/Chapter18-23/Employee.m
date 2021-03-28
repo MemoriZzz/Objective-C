@@ -14,8 +14,13 @@
 }
 
 //override
+//-(void) bodyMassIndex{
+//    NSLog(@"bmi is %f.",  19.0);
+//}
+
+//super
 -(void) bodyMassIndex{
-    NSLog(@"bmi is %f.",  19.0);
+    NSLog(@"bmi is %f.",   [super weightInKilos] / ([super heightInMeters] * [super heightInMeters]));
 }
 
 @end
