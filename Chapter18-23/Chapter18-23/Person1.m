@@ -6,9 +6,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Person.h"
+#import "Person1.h"
 
-@implementation Person
+@implementation Person1
 
 //getters & setters
 -(float) heightInMeters{

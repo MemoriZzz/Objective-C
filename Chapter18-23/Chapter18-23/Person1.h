@@ -5,10 +5,10 @@
 //  Created by admin on 2021/3/28.
 //
 
-#ifndef Person_h
-#define Person_h
+#ifndef Person1_h
+#define Person1_h
 
-@interface Person : NSObject
+@interface Person1 : NSObject
 {
     float _heightInMeters;
     int _weightInKilos;
@@ -24,4 +24,4 @@
 @end
 
 
-#endif /* Person_h */
+#endif /* Person1_h */
