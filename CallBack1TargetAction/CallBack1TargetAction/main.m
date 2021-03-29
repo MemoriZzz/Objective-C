@@ -12,11 +12,12 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
 
         Logger *logger = [[Logger alloc]init];
-        __unused NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:1.0
-                                  target:logger
-                                  selector:@selector(updateLastTime:)
-                                  userInfo:nil
-                                  repeats:YES];
+        
+        [NSTimer scheduledTimerWithTimeInterval:1.0
+                 target:logger //tell logger
+                 selector:@selector(updateLastTime:)//to call func "updateLastTime"
+                 userInfo:nil
+                 repeats:YES]; //repeat
         
         
         [[NSRunLoop currentRunLoop] run]; //持续等待事件发生...
