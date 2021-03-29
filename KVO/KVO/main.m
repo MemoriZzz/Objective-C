@@ -18,7 +18,7 @@ int main(int argc, const char * argv[]) {
         //Anytime the dog hunger value changes, person will be notified this change.
         [dog addObserver:person
              forKeyPath:@"hunger"
-             options:NSKeyValueObservingOptionNew //whenever the value is set, that value is the one we want to recieve.
+             options:NSKeyValueObservingOptionOld //whenever the value is set, that value is the one we want to recieve.
              context:NULL];
         
         //Changing...

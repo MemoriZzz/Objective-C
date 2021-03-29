@@ -14,7 +14,7 @@
                         change:(NSDictionary<NSKeyValueChangeKey,id> *)change
                        context:(void *)context{
     if([keyPath isEqualToString:@"hunger"]){
-        NSLog(@"%@", [change objectForKey:NSKeyValueChangeNewKey]);
+        NSLog(@"%@", [change objectForKey:NSKeyValueChangeOldKey]);
     }
 }
 
