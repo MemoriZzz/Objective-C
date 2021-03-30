@@ -10,6 +10,6 @@
 @implementation Logger
 
 -(void)zoneChange:(NSNotificationCenter *)note{
-    NSLog(@"The system time zone has changed.");
+    NSLog(@"1. The system time zone has changed.");
 }
 @end
