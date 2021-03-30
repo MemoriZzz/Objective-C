@@ -10,7 +10,17 @@ typedef void (^MyType) (id, NSUInteger, BOOL *);
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+        //Objective-C Blocks - raywenderlich.com （YouTube）
+        NSLog(@"Objective-C Blocks - raywenderlich.com （YouTube）------");
+        NSArray *thePowerpuffGirls = @[@"Blossom花花", @"Bubbles泡泡", @"Buttercup毛毛"];
+        [thePowerpuffGirls enumerateObjectsUsingBlock:
+         ^(id element, NSUInteger idx, BOOL *stop) { NSLog(@"GIRL NAME: %@", (NSString*)element); }
+        ];
         
+        
+        
+        //Objective-C 编程 第28章
+        NSLog(@"\n\n\nObjective-C 编程 第28章-------------------");
         NSArray *oldStrings = [NSArray arrayWithObjects:@"apple", @"orange", @"banana", nil];
         NSLog(@"old strings: %@", oldStrings);
         NSMutableArray *newStrings = [[NSMutableArray alloc] init];
