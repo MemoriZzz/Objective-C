@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+typedef void (^MyType) (id, NSUInteger, BOOL *);
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -16,7 +17,7 @@ int main(int argc, const char * argv[]) {
         NSArray *vowels = [NSArray arrayWithObjects:@"a", @"e", @"i", @"o", @"u", nil];
         
         //声明block变量
-        void (^devowelizer)(id, NSUInteger, BOOL *);
+        MyType devowelizer;
 
         //将block对象赋值给变量
         devowelizer = ^(id element, NSUInteger i, BOOL *stop){
