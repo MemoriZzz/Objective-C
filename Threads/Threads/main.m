@@ -27,12 +27,11 @@ int main(int argc, const char * argv[]) {
         dispatch_queue_t queue3 = dispatch_queue_create("TeST", DISPATCH_QUEUE_CONCURRENT);
         for(int i=0; i<10; i++){ dispatch_sync(queue3, ^{ NSLog(@"%d %@", i, [NSThread currentThread]); }); }
         
-        //同步并行
+        
+        //异步并行
         NSLog(@"异步并行-----------------");
         dispatch_queue_t queue4 = dispatch_queue_create("TeST", DISPATCH_QUEUE_CONCURRENT);
         for(int i=0; i<10; i++){ dispatch_async(queue4, ^{ NSLog(@"%d %@", i, [NSThread currentThread]); }); }
-        
-
         
         [[NSRunLoop currentRunLoop] run];
         
