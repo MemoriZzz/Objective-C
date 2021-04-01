@@ -7,7 +7,6 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
-#import "NavigationController.h"
 
 
 @interface AppDelegate ()
@@ -28,11 +27,7 @@
     self.window.backgroundColor = [UIColor yellowColor];
     [self.window makeKeyAndVisible];
     
-    //将window的rootViewController设置为新的ViewController
-//    self.window.rootViewController = ViewController.new;
-
-    
-    //将window的rootViewController设置为新的ViewController
+    //将window的rootViewController设置为UINavigationController，且该UINavigationController的rootViewController为ViewController
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:ViewController.new];
     
     
