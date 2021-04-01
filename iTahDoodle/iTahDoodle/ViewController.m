@@ -17,11 +17,12 @@
     
     [super loadView];
     
+    //1. 以winFrame为基准
     CGRect winFrame = [[UIScreen mainScreen] bounds];
     //2. 设置三个对象的frame（table, field, button）
-    CGRect tableFrame = CGRectMake(20, 80, winFrame.size.width-40, winFrame.size.height-100);
-    CGRect fieldFrame = CGRectMake(20, 40, 200, 31);
-    CGRect buttonFrame = CGRectMake(228, 40, 72, 31);
+    CGRect tableFrame = CGRectMake(20, 120, winFrame.size.width-40, winFrame.size.height-140);
+    CGRect fieldFrame = CGRectMake(20, 80, 200, 31);
+    CGRect buttonFrame = CGRectMake(228, 80, 72, 31);
 
     //3.1 创建UITableView对象并设置
     self.myTable = [[UITableView alloc] initWithFrame:tableFrame style:UITableViewStylePlain];
@@ -45,8 +46,20 @@
     [self.view addSubview:self.myField];
     [self.view addSubview:self.myButton];
     
-    //create a new array
+    //create a new array（MODEL）
     self.tasks = [NSMutableArray array];
+    
+    //Left Button
+    UIBarButtonItem *myLeftButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemOrganize target:self action:@selector(goLeft:)];
+    self.navigationItem.leftBarButtonItem = myLeftButton;
+    self.navigationItem.leftBarButtonItem.tintColor= [UIColor greenColor];
+    
+    //Right Button
+    UIBarButtonItem *myRightButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(goRight:)];
+    self.navigationItem.rightBarButtonItem = myRightButton;
+    self.navigationItem.rightBarButtonItem.tintColor= [UIColor systemPinkColor];
+    
+
 }
 
 //UIButton回调ViewController的方法
@@ -72,10 +85,20 @@
     return c;
 }
 
-//- (void)viewDidLoad {
-//    [super viewDidLoad];
-//    // Do any additional setup after loading the view.
-//}
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+}
+
+- (void)goLeft:(id)sender {
+    [self.navigationController pushViewController:UIViewController.new animated:YES];
+}
+
+- (void)goRight:(id)sender {
+    [self.navigationController pushViewController:UIViewController.new animated:YES];
+}
+
+
 
 
 @end

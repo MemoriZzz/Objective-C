@@ -7,6 +7,8 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "NavigationController.h"
+
 
 @interface AppDelegate ()
 
@@ -27,7 +29,12 @@
     [self.window makeKeyAndVisible];
     
     //将window的rootViewController设置为新的ViewController
-    self.window.rootViewController = ViewController.new;
+//    self.window.rootViewController = ViewController.new;
+
+    
+    //将window的rootViewController设置为新的ViewController
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:ViewController.new];
+    
     
     return YES;
 }

@@ -13,6 +13,7 @@
 		841F171E26149207009F9B6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841F171D26149207009F9B6D /* Assets.xcassets */; };
 		841F172126149207009F9B6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841F171F26149207009F9B6D /* LaunchScreen.storyboard */; };
 		841F172426149207009F9B6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F172326149207009F9B6D /* main.m */; };
+		849A7DE3261589D700467316 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849A7DE2261589D700467316 /* NavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		841F172026149207009F9B6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		841F172226149207009F9B6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		841F172326149207009F9B6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		849A7DE1261589D700467316 /* NavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		849A7DE2261589D700467316 /* NavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				841F171F26149207009F9B6D /* LaunchScreen.storyboard */,
 				841F172226149207009F9B6D /* Info.plist */,
 				841F172326149207009F9B6D /* main.m */,
+				849A7DE1261589D700467316 /* NavigationController.h */,
+				849A7DE2261589D700467316 /* NavigationController.m */,
 			);
 			path = iTahDoodle;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				841F171926149206009F9B6D /* ViewController.m in Sources */,
+				849A7DE3261589D700467316 /* NavigationController.m in Sources */,
 				841F171326149206009F9B6D /* AppDelegate.m in Sources */,
 				841F172426149207009F9B6D /* main.m in Sources */,
 			);
